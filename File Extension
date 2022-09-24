@@ -1,0 +1,11 @@
+s=input()
+ss=s[::-1]
+i=0
+ext=""
+for i in ss:
+    if(i=='.'):
+        print("The extension of the file is: ",ext[::-1])
+        break
+    else:
+        ext=ext+i
+      
