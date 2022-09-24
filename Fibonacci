@@ -1,0 +1,13 @@
+a=0
+b=1
+n=int(input())
+i=0
+print(a,end=",")
+print(b,end=",")
+for i in range(n+1):
+    s=a+b
+    print(s,end=",")
+    c=b
+    b=a
+    b=s
+    
