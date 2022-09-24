@@ -1,0 +1,7 @@
+l=eval(input())
+i=0
+r=[]
+for i in l:
+   if(i>=0):
+      r.append(i)
+print(r)
