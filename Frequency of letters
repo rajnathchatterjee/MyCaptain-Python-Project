@@ -1,0 +1,25 @@
+def int freq (String s, char ch):
+      i=0
+      c=0
+      for i in s:
+         if(i==ch):
+           c=c+1
+      return c
+     
+ dict={}
+ com="abcdefghijklmnopqrstuvwxyz"
+ s=input()
+ i=0
+ j=0
+ for i in s.lower():
+      for j in com:
+          if(i==j):
+             fr= freq(s.lower(),j)
+             dict[j]=fr
+  
+v=d.items()
+for i in v:
+    for j in d.keys():
+        if(dict[j]==i):
+            print(j,"=",i)
+        
