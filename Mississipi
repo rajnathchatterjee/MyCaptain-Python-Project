@@ -1,0 +1,24 @@
+
+def count(String s):
+    S="abcdefghijklmnopqrstuvwxyz"
+    1=0
+    j=0
+    c=0
+    s=s.lower()
+    for i in S:
+        c=0
+        for j in s:
+           if(i==j):
+             c=c+1
+        dict[i]=c
+    
+    v=dict.values()
+    v=v.sort()
+    v=v[::-1]
+    for i in v:
+       for j in dict.keys():
+           if (i==dict[j]):
+              print(j,"=",v)
+              
+in=eval(input())
+count(in)
