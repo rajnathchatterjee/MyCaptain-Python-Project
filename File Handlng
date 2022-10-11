@@ -1,0 +1,26 @@
+import csv
+def write_csv(info):
+    with open("student_info.csv", a, nextline="") as f:
+         writer=csv.writer(f)
+         if writer.tell()==0:
+            writer.writerow("Name Age Contact_Number Email_ID".split())
+         writer.writerow(info)
+ 
+ if __name__ == "__main__":
+     condition= True
+     while(condition):
+        i=input("Enter Student information in the form of- Name Age Contact_Number Email_ID")
+        st_info=i.split()
+        print("\nEntered details-\nName= {} \nAge= {} \nContact_Number= {}\n Email_ID= {}\n".format(st_info[0],st_info[1],st_info[2],st_info[3],st_info[4]))
+        check=input("Do you want to enter these? (y/n)")
+        if check=="y":
+           writer_csv(st_info)
+        else:
+           continue
+        check=input("Do you want to enter another detail?(y/n)")
+        if check=="y":
+           condition="True"
+        else:
+           condition="False"
+        
+        
